@@ -93,6 +93,7 @@ address {
     padding: 10px 32px;
     background-color: var(--accent-color);
     color: var(--primary-white-color);
+    border-radius: 4px;
 
 }
 
@@ -103,6 +104,7 @@ address {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
+    border-radius: 4px;
 }
 
 .button.secondary:hover,
@@ -288,16 +290,21 @@ address {
     fill: #AFB1B8;
 }
 
-.social-link.link:hover, 
-.social-link.link:focus {
+.social-link:hover, 
+.social-link:focus {
     background-color: var(--accent-color);
+}
+
+.social-link:hover .social-link-icon,
+.social-link:focus .social-link-icon {
     fill: var(--primary-white-color);
 }
 
-.social-link-icon.link:hover, 
-.social-link-icon.link:focus {
-    color: var(--primary-white-color);
-}  
+/* .social-link-icon:hover,
+.social-link-icon:focus {
+    fill: var(--primary-white-color);
+} */
+
 
 /* Section regular clients */
 
@@ -376,7 +383,11 @@ address {
     background-color: var(--primary-white-color);
 }
 
-.portfolio-item:hover {
+.portfolio-link {
+    display: block;
+}
+
+.portfolio-link:hover {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
