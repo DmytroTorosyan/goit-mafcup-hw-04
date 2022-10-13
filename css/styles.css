@@ -308,6 +308,10 @@ address {
 
 /* Section regular clients */
 
+.regular-clients {
+    background-color: var(--primary-white-color);
+}
+
 .regular-clients-list {
     display: flex;
     justify-content: center;
@@ -332,9 +336,7 @@ address {
 
 
 
-.regular-clients-item {
 
-}
 
 
 
@@ -423,6 +425,7 @@ address {
 
 /* hero */
 .hero {
+    margin: 0 auto;
     width: 1600px;
     padding-top: 200px;
     padding-bottom: 200px;
